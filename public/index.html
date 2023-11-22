@@ -163,7 +163,7 @@
                     <div id="overviewHeader" class="row">
 
                         <!-- Header -->
-                        <header class="col-12">
+                        <header class="header-column col-12">
                             <article class="profile hstack gap-3">
                                 <h1 class="p-2">Overview</h1>
                                 <figure class="p-2 ms-auto">
@@ -177,6 +177,30 @@
                                 </figure>
                                 <p class="p-2">Jones Ferdinand</p>
                                 <img id="profilepic" src="assets/images/profile_photo.png" alt="Profile Photo">
+                                
+                                <!-- Modal -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Log out
+                                </button>
+  
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <section class="modal-content">
+                                            <article class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Log Out</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </article>
+                                            <p class="modal-body">
+                                                Are you sure you want to exit the system?
+                                            </p>
+                                            <footer class="modal-footer">
+                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Yes</button>
+                                                <button type="button" class="btn btn-secondary">No</button>
+                                            </footer>
+                                        </section>
+                                    </div>
+                                </div>
                             </article>
                         </header>
                         
@@ -284,7 +308,6 @@
                                             <h3>Waiting on Feature Request</h3>
                                             <p class="number">4238</p>
                                         </li>
-                                        <hr style="border-top: 2px black;">
     
                                         <li class="unresolvedTicketContents ">
                                             <h3>Awaiting Customer Response</h3>
