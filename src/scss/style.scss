@@ -151,8 +151,17 @@ body{
 }
 
 // Header - Start of Overview ----------------------------------------
+
+#overviewHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .overview {
+  
     margin-top: 60px;
+   
     
     header {
         justify-content: center;
@@ -170,8 +179,13 @@ body{
     }
 }
 
-#profile {
-    margin-top: 60px;
+.profile {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
     
     p {
         color:$black-color;
@@ -190,6 +204,7 @@ body{
 svg {
     margin: 0px 5px 0px 5px;
 }
+
 
 
 // First Content Row ----------------------------------------
@@ -322,17 +337,16 @@ svg {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    width: 100vw;
 }
+
 
 #thirdRowBox {
     display: flex;
-    justify-content: space-between; /* Adjust as needed */
-    align-items: center; /* Adjust as needed */
+    flex-direction: column;
+   justify-content:center;
+   align-items: center;
 
-    #unresolvedTicket,
-    #task {
-        transform: translateX(15%);
-    }
 }
 
 #unresolvedTicket {
@@ -341,7 +355,7 @@ svg {
     justify-content: space-between;
     align-items: center;
 
-    width: 80vw;
+    width: 95vw;
     height: 50vh;
     margin-bottom: 30px;
     padding-left: 0;
@@ -434,7 +448,7 @@ svg {
     justify-content: space-evenly;
     align-items: center;
 
-    width: 80vw;
+    width: 95vw;
     height: auto;
     
     margin-bottom: 30px;
@@ -607,16 +621,27 @@ input[type="checkbox"]::before {
     }
 
     // Third row
+
+    #thirdRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 82vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
     #thirdRowBox {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 69vw;
+        align-items: center;
+       
         margin: 0;
     }
 
     #unresolvedTicket, #task{
-        width: 33vw;
+        width: 39.5vw;
         height: 336px;
     }
     .unresolvedTicketContents{
